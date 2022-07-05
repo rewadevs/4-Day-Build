@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<div class="container" style=" width: fit-content;">
+
+
+  <br />
+  <img src="{{ url_for('static',filename='kopv.png')}}" width="400px" style="object-position: 50% 50%;">
+  <br />
+  <br />
+  <div class=" card" ">
+      <div class=" card-body">
+    <form method="POST">
+      <h3 align="center">Sign Up</h3>
+      <div class="form-group">
+        <label for="idsiswa">ID</label>
+        <input type="idsiswa" class="form-control" id="idsiswa" name="idsiswa" placeholder="Nomor ID kartu siswa" />
+      </div>
+      <div class="form-group">
+        <label for="firstName">Nama</label>
+        <input type="text" class="form-control" id="firstName" name="firstName"
+          placeholder="Isi nama sesuai kartu siswa" />
+      </div>
+      <div class="form-group">
+        <label for="password1">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1" placeholder="Masukkan Password" />
+      </div>
+      <div class="form-group">
+        <label for="password2">Password (Confirm)</label>
+        <input type="password" class="form-control" id="password2" name="password2"
+          placeholder="Masukkan Ulang Password" />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Daftar</button>
+      <a class="btn btn-link float-right" id="login" href="/login">Sudah
+        terdaftar, masuk disini</a>
+    </form>
+
+
+
+
+  </div>
+</div>
+
+</div>
+{% endblock %}
